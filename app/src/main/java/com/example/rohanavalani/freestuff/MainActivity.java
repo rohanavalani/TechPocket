@@ -14,14 +14,16 @@ public class MainActivity extends ActionBarActivity {
     EditText whatText;
     EditText whereText;
     Button submit;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-         whatText = (EditText) findViewById(R.id.editTextwhat);
-         whereText = (EditText) findViewById(R.id.editTextwhere);
-        submit = (Button) findViewById(R.id.buttonsubmit);
-        submit.setOnClickListener(new View.OnClickListener() {
+         whatText = (EditText) findViewById(R.id.whatText);
+         whereText = (EditText) findViewById(R.id.whereText);
+         submit = (Button) findViewById(R.id.buttonsubmit);
+         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String what = MainActivity.this.whatText.getText().toString().trim();
